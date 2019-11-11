@@ -8,6 +8,7 @@ class Account:
     def save_account(self): 
 
         Account.account_list.append(self)
+        
     def __init__(self,first_name,last_name,password):
 
       # docstring removed for simplicity

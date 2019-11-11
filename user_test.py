@@ -24,14 +24,12 @@ class TestAccount(unittest.TestCase):
         self.assertEqual(self.new_account.last_name,"254")
         self.assertEqual(self.new_account.password,"12345v")
 
+    def test_save_account(self):
+       
+        self.new_account.save_account() 
+        self.assertEqual(len(Account.account_list),1)
 
 if __name__ == '__main__':
     unittest.main()
     
-    def test_save_account(self):
-       
-        self.new_account.save_account() # saving the new contact
-        self.assertEqual(len(Account.account_list),1)
-
-if __name__ ==  '__main__':
-    unittest.main()
+   
