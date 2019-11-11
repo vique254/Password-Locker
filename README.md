@@ -1,5 +1,5 @@
 ### ***PASSWORD LOCKER***
-[Lock](http://www.bobology.com/members/images/381.jpg)
+![Lock](http://www.bobology.com/members/images/381.jpg)
 ## Author
 [Vique254](https://github.com/vique254)
 ## Description
