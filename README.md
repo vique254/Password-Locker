@@ -1,8 +1,8 @@
 ### ***PASSWORD LOCKER***
+[Lock](http://www.bobology.com/members/images/381.jpg)
 ## Author
 [Vique254](https://github.com/vique254)
 ## Description
-(http://www.bobology.com/members/images/381.jpg)
 This is an application that helps the user  manage his/her passwords and even generate new passwords .
 ## Set-up Instructions
 * In the terminal navigate to the directory you want the project to reside in e.g (cd ~/Desktop)
