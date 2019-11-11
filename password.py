@@ -1,4 +1,3 @@
-import pyperclip
 class Account:
     """
     Class that generates new instances of passwords
@@ -71,9 +70,4 @@ class Account:
         return cls.account_list
     
     
-    @classmethod
-    def copy_email(cls,number):
-        account_found = Account.find_by_number(number)
-        pyperclip.copy(account_found.email)
-    
-    
+   
