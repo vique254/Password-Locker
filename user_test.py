@@ -30,7 +30,7 @@ class TestAccount(unittest.TestCase):
         self.new_account.save_account() 
         self.assertEqual(len(Account.account_list),6)
 
-    def test_save_multiple_account(self):
+    def test_save_multiple_accounts(self):
         '''
         test_save_multiple_account to check if we can save multiple account
         objects to our account_list
@@ -77,7 +77,7 @@ class TestAccount(unittest.TestCase):
 
         self.assertTrue(account_exists)
         
-    def test_display_all_account(self):
+    def test_display_all_accounts(self):
         '''
         method that returns a list of all accounts saved
         '''
