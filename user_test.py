@@ -8,3 +8,22 @@ class TestAccount(unittest.TestCase):
     Args:
     unittest.TestCase: TestCase class that helps in creating  test cases
     '''
+    def setUp(self):
+        '''
+        Set up method to run before each test cases.
+        '''
+        self.new_account = Account("vique","254","12345v ") # create contact object
+
+
+    def test_init(self):
+        '''
+        test_init test case to test if the object is initialized properly
+        '''
+
+        self.assertEqual(self.new_account.first_name,"vique")
+        self.assertEqual(self.new_account.last_name,"254")
+        self.assertEqual(self.new_account.password,"12345v")
+
+
+if __name__ == '__main__':
+    unittest.main()
