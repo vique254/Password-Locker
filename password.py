@@ -22,3 +22,11 @@ class Account:
         tearDown method that does clean up after each test case has run.
         '''
         Account.account_list = []
+
+    def delete_account(self):
+
+        '''
+        delete_account method deletes a saved account from the account_list
+        '''
+
+        Account.account_list.remove(self)
