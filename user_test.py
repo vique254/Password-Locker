@@ -27,7 +27,7 @@ class TestAccount(unittest.TestCase):
     def test_save_account(self):
        
         self.new_account.save_account() 
-        self.assertEqual(len(Account.account_list),1)
+        self.assertEqual(len(Account.account_list),2)
 
     def test_save_multiple_account(self):
         '''
@@ -37,7 +37,18 @@ class TestAccount(unittest.TestCase):
         self.new_account.save_account()
         test_account = Account("Richie","spice","00000") # new account
         test_account.save_account()
-        self.assertEqual(len(Account.account_list),3)
+        self.assertEqual(len(Account.account_list),4)
+
+    def test_delete_contact(self):
+        '''
+        test_delete_account to test if we can remove a account from our account list
+        '''
+        self.new_account.save_account()
+        test_account = Account("Richie","spice","00000") 
+        test_account.save_account()
+
+        self.new_account.delete_account()
+        self.assertEqual(len(Account.account_list),1)
 
 if __name__ == '__main__':
     unittest.main()
